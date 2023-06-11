@@ -1,0 +1,580 @@
+/* Base CSS */
+/* custom fonts  */
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 0 solid;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: #2a3757;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: #575d66;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*---------------------- Hero Section start ----------------------*/
+
+.moblile_img {
+  display: none;
+}
+.hero_section {
+  height: 761px;
+  position: relative;
+  background: rgba(255, 245, 228, 0.4);
+}
+
+.hero_section .hero_section-right h1 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 120%;
+  color: #002852;
+  margin-bottom: 35px;
+}
+
+.hero_section .hero_section-right p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 150%;
+  color: #212121;
+}
+
+.hero_section .hero_section-left {
+  position: relative;
+}
+.hero_section .hero_section-left .img_shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero_section .hero_section-left img {
+  display: block;
+  max-width: 499px;
+  width: 100%;
+  margin: 0 auto;
+  /* filter: drop-shadow(10px 20px 40px rgba(29, 39, 67, 0.25)); */
+}
+
+.join_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 515px;
+  width: 100%;
+  height: 68px;
+  background: #f5f5f5;
+  border: 1px solid #e9ecf1;
+  border-radius: 10px;
+  padding-left: 18px;
+}
+
+.join_box img {
+  margin-right: 10px;
+}
+
+.join_box .input_box {
+  width: 90%;
+}
+
+.join_box input {
+  height: 55px;
+  border: none;
+  background: #f5f5f5;
+  width: 100%;
+}
+
+.join_box input:focus {
+  outline: none;
+}
+
+.join_box input::placeholder {
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #768397;
+}
+
+.join_box a {
+  text-decoration: none;
+  flex-shrink: 0;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  color: #000;
+  padding: 18px;
+  border-radius: 10px;
+  border: none;
+  background: #fbe54d;
+  margin-right: 5px;
+  transition: all 0.3s;
+}
+
+.join_box a:hover {
+  color: #fff;
+  background: #002852;
+}
+
+/*---------------------- Hero Section end ----------------------*/
+
+/* ---------  Subscribe Section start ---------  */
+
+.lg-container {
+  max-width: 1251px;
+  width: 100%;
+  margin: 0 auto;
+}
+.subscribe_section {
+  padding: 100px 0;
+}
+
+.subscribe_section .subscribe_section-inner {
+  padding: 50px;
+  background: #ffffff;
+  box-shadow: 5px 10px 40px 2px rgba(210, 217, 230, 0.3);
+  border-radius: 14px;
+}
+
+.subscribe_section .subscribe_section-inner h2 {
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 120%;
+  text-align: center;
+  color: #002852;
+  margin-bottom: 60px;
+}
+
+.subscribe_section .app_wrapper {
+  display: flex;
+  gap: 24px;
+}
+.subscribe_section .app_wrapper .single_app {
+  background: #ffffff;
+  border: 1px solid #dae0ee;
+  border-radius: 16px;
+  padding: 30px 10px;
+  width: 265px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: all 0.4s;
+}
+
+.subscribe_section .app_wrapper .single_app:hover {
+  border: 1px solid #002852;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.subscribe_section .app_wrapper .single_app .icon {
+}
+
+.subscribe_section .app_wrapper .single_app p {
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #343c40;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* ---------  Subscribe Section End ---------  */
+
+/* --------- Skills Section start --------- */
+
+.skills_section {
+  background: rgba(252, 222, 192, 0.2);
+  padding: 80px 0;
+}
+
+.section-title {
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 120%;
+  color: #212c5b;
+  margin-bottom: 40px;
+}
+
+.skills_section .skills_section-left p {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  color: #212121;
+  margin-bottom: 1rem;
+}
+
+.skills_section .skills_section-right {
+  /* width: max-content; */
+  /* margin-left: auto; */
+}
+
+.skills_section .skills_section-right .photo-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.skills_section .skills_section-right .img-column {
+  display: flex;
+  gap: 16px;
+}
+
+.skills_section .skills_section-right .img-column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --------- Skills Section end --------- */
+
+/* --------- Solver Section start --------- */
+
+.solver_section {
+  padding: 80px 0;
+}
+
+.sm-container {
+  max-width: 1070px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.solver_section p {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  color: #212121;
+}
+
+.solver_section .solver_section-photo-gallery {
+  margin-top: 35px;
+  display: flex;
+  gap: 16px;
+}
+.solver_section .img-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.solver_section .img-column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* --------- Solver Section end ---------  */
+
+/* --------- discover Section start --------- */
+
+.discover_section {
+  padding: 70px 0;
+  background: #f5f5f5;
+}
+
+.discover_section .single_card {
+  padding: 41px;
+  background: #ffffff;
+  box-shadow: 10px 10px 20px rgba(208, 217, 231, 0.25);
+  border-radius: 14px;
+}
+
+.discover_section .single_card .icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+}
+
+.discover_section .single_card .icon img {
+  height: 100%;
+  width: 100%;
+}
+
+.discover_section .single_card h4 {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  text-align: center;
+  color: #2d345a;
+  margin-top: 28px;
+  margin-bottom: 14px;
+}
+
+.discover_section .single_card p {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #768397;
+}
+
+/* --------- discover Section end --------- */
+
+/* --------- About Section start --------- */
+
+.mobile_title {
+  display: none;
+}
+
+.about_section {
+  padding: 80px 0;
+}
+
+.about_section .section-title {
+  margin-bottom: 20px;
+}
+
+.about_section .author_img {
+  margin-top: 83px;
+}
+
+.about_section .about_author {
+  padding-left: 55px;
+}
+
+.about_section .about_author p {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  color: #212121;
+}
+
+/* --------- About Section end -------- */
+
+/* ---------  notified Section start ---------  */
+.lg-container {
+  max-width: 1251px;
+  width: 100%;
+  margin: 0 auto;
+}
+.notified_section {
+  padding-top: 100px;
+}
+
+.notified_section .notified_section-inner {
+  padding: 74px 50px;
+  background: #01132b;
+  box-shadow: 5px 10px 40px 2px rgba(210, 217, 230, 0.3);
+  border-radius: 14px;
+}
+
+.notified_section .notified_section-inner h2 {
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 120%;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.notified_section .join_box {
+  margin: 0 auto;
+}
+
+/* ---------  notified Section end ---------  */
+
+/* --------- Browse Section start ---------  */
+
+.browse_section {
+  height: 692px;
+  background: rgba(255, 245, 228, 0.4);
+}
+
+.browse_section .browse_section-left {
+  position: relative;
+}
+.browse_section .browse_section-left .img_shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.browse_section .browse_section-left img {
+  display: block;
+  max-width: 499px;
+  width: 100%;
+  /* margin: 0 auto; */
+
+  /* filter: drop-shadow(17px 40px 50px rgba(0, 0, 0, 0.29))
+    drop-shadow(0px 36px 60px rgba(131, 133, 147, 0.36)); */
+}
+
+.browse_section-right img {
+  width: 262px;
+  margin-left: 70px;
+}
+
+.browse_section .browse_section-right h2 {
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  color: #002852;
+  margin-bottom: 16px;
+}
+
+.browse_section .browse_section-right p {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #212121;
+  margin-bottom: 40px;
+}
+
+.link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 27px;
+  color: #061732;
+  border-radius: 6px;
+  padding: 22px 24px;
+  text-decoration: none;
+  transition: 0.3s all;
+  border: 2px solid transparent;
+  background: #fbe54d;
+}
+
+.link-btn i {
+  margin-top: 3px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.link-btn:hover {
+  color: #061732;
+  background: #fff;
+  border: 2px solid #061732;
+}
+
+.link-btn:hover i {
+  color: #061732;
+}
+
+/* --------- Browse Section End --------- */
+
+/* --------- Footer area start --------- */
+
+footer {
+  margin: 90px 0;
+  margin-top: 0;
+}
+
+footer p {
+  font-family: "Gilroy";
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  color: #7f8794;
+}
+
+footer a {
+  text-decoration: none;
+  color: #7f8794;
+}
+
+/* --------- Footer area end --------- */
